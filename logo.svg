@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title id="title">Logo AKP Confidence — pain artisanal et épi de blé</title>
+  <rect width="128" height="128" rx="30" fill="#342b24"/>
+  <circle cx="64" cy="64" r="48" fill="#f8efe2"/>
+  <path d="M32 75c0-14 12-25 28-25h8c16 0 28 11 28 25v9H32z" fill="#c8754d"/>
+  <path d="M46 67c5-7 11-10 18-10M63 69c5-7 11-10 18-10M79 72c4-5 8-7 13-8" fill="none" stroke="#f8dcae" stroke-linecap="round" stroke-width="4"/>
+  <path d="M47 94c9 5 25 5 34 0" fill="none" stroke="#342b24" stroke-linecap="round" stroke-width="3"/>
+  <path d="M93 42c-2-10 1-18 9-24M98 33l-8-6m10 1 8-6m-7 14 9-3" fill="none" stroke="#789064" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+</svg>

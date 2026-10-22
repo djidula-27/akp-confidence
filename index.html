@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f4ed">
+    <title>AKP Confidence — Boulangerie</title>
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a class="brand" href="#" aria-label="Accueil AKP Confidence" data-view="dashboard">
+          <img class="brand-mark" src="logo.svg" alt="">
+          <span class="brand-copy"><strong>AKP Confidence</strong><small>MAISON BOULANGÈRE</small></span>
+        </a>
+        <div class="sidebar-label">ESPACE DE TRAVAIL</div>
+        <nav class="main-nav" aria-label="Navigation principale">
+          <button class="nav-link active" data-view="dashboard"><span class="nav-icon">⌂</span>Vue d'ensemble</button>
+          <button class="nav-link" data-view="pos"><span class="nav-icon">▣</span>Caisse</button>
+          <button class="nav-link" data-view="production"><span class="nav-icon">♨</span>Production</button>
+          <button class="nav-link" data-view="online-orders"><span class="nav-icon">◷</span>Commandes<span class="nav-count" id="nav-online-count"></span></button>
+          <button class="nav-link" data-view="inventory"><span class="nav-icon">▤</span>Stock<span class="nav-count" id="nav-alert-count"></span></button>
+          <button class="nav-link" data-view="receipts"><span class="nav-icon">≡</span>Tickets</button>
+        </nav>
+        <div class="sidebar-bottom">
+          <a class="storefront-link" href="boutique.html" target="_blank" rel="noopener">↗ &nbsp; Ouvrir la boutique</a>
+          <div class="store-card">
+            <span class="store-dot"></span>
+            <span><strong>Rue des Saules</strong><small>Boulangerie · Ouverte</small></span>
+            <span class="store-more">···</span>
+          </div>
+          <div class="profile">
+            <span class="avatar">MM</span>
+            <span><strong>Manon Martin</strong><small>Responsable</small></span>
+            <span class="store-more">⌄</span>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main-area">
+        <header class="topbar">
+          <div class="mobile-brand"><img class="brand-mark" src="logo.svg" alt=""><strong>AKP Confidence</strong></div>
+          <div class="breadcrumbs"><span>Rue des Saules</span><span class="crumb-sep">/</span><strong id="page-crumb">Vue d'ensemble</strong></div>
+          <div class="topbar-actions">
+            <span class="open-indicator"><span class="store-dot"></span>Boulangerie ouverte</span>
+            <span class="today-label" id="today-label"></span>
+            <button class="icon-button" aria-label="Notifications" title="Notifications">♧<i class="notification-dot"></i></button>
+          </div>
+        </header>
+        <section class="page-content" id="page-content" aria-live="polite"></section>
+      </main>
+    </div>
+
+    <dialog id="action-dialog" class="modal"></dialog>
+    <div id="toast-region" class="toast-region" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
